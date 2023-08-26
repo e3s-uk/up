@@ -5,9 +5,9 @@ git clone https://github.com/isedwards/wis2box
 cp wis2box/examples/config/wis2box.env wis2box/dev.env
 
 # Ensure passwords are >= 8 chars else containers may not start
-sed -i '/^WIS2BOX_BROKER_PASSWORD/c\WIS2BOX_BROKER_PASSWORD=abcd1234!' dev.env
-sed -i '/^WIS2BOX_STORAGE_PASSWORD/c\WIS2BOX_STORAGE_PASSWORD=abcd1234!' dev.env
-sed -i "/^WIS2BOX_HOST_DATADIR/c\WIS2BOX_HOST_DATADIR=$(pwd)/wis2box-data" dev.env
+sed -i '/^WIS2BOX_BROKER_PASSWORD/c\WIS2BOX_BROKER_PASSWORD=abcd1234!' wis2box/dev.env
+sed -i '/^WIS2BOX_STORAGE_PASSWORD/c\WIS2BOX_STORAGE_PASSWORD=abcd1234!' wis2box/dev.env
+sed -i "/^WIS2BOX_HOST_DATADIR/c\WIS2BOX_HOST_DATADIR=$(pwd)/wis2box-data" wis2box/dev.env
 
 cp wis2box/examples/config/synop-bufr-mappings.yml wis2box-data/data-mappings.yml
 # TODO:
