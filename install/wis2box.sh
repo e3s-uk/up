@@ -1,5 +1,6 @@
+echo "Warning, currently using isedwards/wis2box repository"
 mkdir wis2box-data
-git clone https://github.com/wmo-im/wis2box
+git clone https://github.com/isedwards/wis2box
 
 cp wis2box/examples/config/wis2box.env wis2box/dev.env
 
