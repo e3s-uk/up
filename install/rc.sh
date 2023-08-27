@@ -1,4 +1,4 @@
-alias ll=ls -al
+alias ll="ls -al"
 
 t() {
     if tmux list-sessions &> /dev/null; then
