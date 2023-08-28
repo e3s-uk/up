@@ -25,6 +25,12 @@ mkcd() {
     mkdir -p "$1" && cd "$1"
 }
 
+bold() {
+    BOLD="\033[1m"
+    RESET="\033[0m"
+    echo -e "${BOLD}$1${RESET}"
+}
+
 chext() {
     # Change *.<old-extension> to *.<new-extension>
     
