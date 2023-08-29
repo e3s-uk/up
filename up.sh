@@ -14,7 +14,11 @@ install_nvim() {
 
 install_rc() {
     echo "Adding additional run commands to .bashrc (via .rc.sh)"
-    curl -sSL up.e3s.uk/install/rc.sh | bash
+    curl -sSL up.e3s.uk/install/rc.sh -o ~/.rc.sh
+    # Append ~/.rc.sh to the end of ~/.bashrc if .rc.sh is not already present in the file:
+    grep -qF '.rc.sh' ~/.bashrc || echo 'source ~/.rc.sh' >> ~/.bashrc
+    # Source the script to apply its changes to the current environment as well
+    source ~/.rc.sh
 }
 
 # If no arguments are provided, install everything
