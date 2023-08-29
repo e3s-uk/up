@@ -13,7 +13,7 @@ install_nvim() {
 }
 
 install_rc() {
-    echo "Adding additional run commands to .bashrc (via .rc.sh)
+    echo "Adding additional run commands to .bashrc (via .rc.sh)"
     curl -sSL up.e3s.uk/install/rc.sh | bash
 }
 
