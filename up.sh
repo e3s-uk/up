@@ -1,16 +1,19 @@
 #!/bin/bash
 
 install_docker() {
+    echo "Installing docker..."
     curl -sSL up.e3s.uk/install/docker.sh | bash
 }
 
 install_nvim() {
+    echo "Installing Neovim..."
     sudo apt-get update
-    sudo apt-get install neovim python3-pip
+    sudo apt-get install neovim python3-pip -y
     pip3 install pynvim
 }
 
 install_rc() {
+    echo "Adding additional run commands to .bashrc (via .rc.sh)
     curl -sSL up.e3s.uk/install/rc.sh | bash
 }
 
