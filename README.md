@@ -7,10 +7,12 @@ Install the `up` command by typing `curl up.e3s.uk|sh`
 ## Example usage
 
 ```
+curl up.e3s.uk|sh && up dnr
+
+# or...
 up d  # install docker
 up n  # install neovim
-up dn # install docker and neovim
-...
+up dn # install docker and neovim, etc.
 ```
 
 See [`up.sh`](https://github.com/e3suk/up/blob/165763a941e1477411c6502fa07c905a800c0a46/up.sh#L36-L38) for all available commands.
