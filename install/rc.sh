@@ -1,5 +1,8 @@
 alias ll="ls -al"
 
+# Add local Python install directory
+export PATH="$HOME/.local/bin:$PATH"
+
 t() {
     if tmux list-sessions &> /dev/null; then
         tmux attach
