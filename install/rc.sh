@@ -1,4 +1,5 @@
 alias ll="ls -al"
+alias vi="vim"
 
 # Add local Python install directory
 export PATH="$HOME/.local/bin:$PATH"
@@ -11,7 +12,7 @@ t() {
     fi
 }
 
-vi() {
+vim() {
     if command -v nvim >/dev/null 2>&1; then
         nvim "$@"
     else
