@@ -1,7 +1,12 @@
 alias ll="ls -al"
 alias vi="vim"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
 
-# Add local Python install directory
+# Add local Python bin directory (see also `pipx ensurepath`)
 export PATH="$HOME/.local/bin:$PATH"
 
 t() {
