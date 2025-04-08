@@ -1,5 +1,17 @@
 # up
 
+- Version 0.1.x of `up` provides a simple bash script for automating the installation of a few commonly required tools.
+- Version ≥0.2.0 will provide a TUI (described below)
+
+# Roadmap
+
+The tool is now being extended to provide a Text User Interface (TUI) for:
+1. Orchestrating the creation and management of infrastructure, using terraform Infrastructure as Code (IaC)
+2. Provisioning known servers using Ansible
+3. Managing containerised services (initially limtied to docker compose on a single server)
+
+`up` will be configured by users for their specific needs using standard terraform, ansible, docker compose and .env files.
+
 ## Installation
 
 Install the `up` command by typing `curl up.e3s.uk|sh`
@@ -7,7 +19,8 @@ Install the `up` command by typing `curl up.e3s.uk|sh`
 ## Example usage
 
 ```
-curl up.e3s.uk|sh && up dnr
+curl up.e3s.uk|sh
+up dnr
 
 # or...
 up d  # install docker
